@@ -1,0 +1,8 @@
+services:
+  web:
+    image: ghcr.io/<your-github-username>/ci-cd-demo:latest
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=production
